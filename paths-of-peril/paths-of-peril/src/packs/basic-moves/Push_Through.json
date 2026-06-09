@@ -1,0 +1,49 @@
+{
+  "_id": "5imj9ylMz8eqTDrK",
+  "_key": "!items!5imj9ylMz8eqTDrK",
+  "name": "Push Through!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you force your way through an obstacle, endure harsh conditions, or rely on sheer strength or grit to overcome something in your path, <strong>roll +Tough.</strong></p>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Something goes wrong — you, someone nearby, or something important takes the hit. Choose yourself or another Hero. If that Hero is not In Jeopardy!, mark In Jeopardy! If that Hero is In Jeopardy!, unmark it and take a Condition.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>You push through, but choose one: it takes longer than expected, you suffer a setback along the way, or you create a new problem.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>You push through cleanly and get where you need to go.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>You push through cleanly — and you get an unexpected windfall. Gain an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "tough",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

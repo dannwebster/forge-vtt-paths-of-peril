@@ -1,0 +1,49 @@
+{
+  "_id": "SxFksTrB0B2qu8L6",
+  "_key": "!items!SxFksTrB0B2qu8L6",
+  "name": "Enlighten!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you consult your accumulated knowledge about something, tell the Director what subject you are interested in learning about, and <strong>roll +Brains.</strong></p>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>The Director gives you an Irrelevant Prompt. You get no follow-up questions.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>The Director gives you a General Prompt tangentially related to the situation or subject. You can ask 1 follow-up question.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>The Director gives you a Specific Prompt directly relevant to the situation and subject. You can ask 2 follow-up questions.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>The Director gives you a Specific Prompt directly relevant to the situation and subject, and you gain an Edge. You can ask 3 follow-up questions.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "brains",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

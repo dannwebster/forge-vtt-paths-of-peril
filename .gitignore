@@ -1,0 +1,9 @@
+# IDE
+.idea/
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# LevelDB runtime lock files (generated when Foundry has packs open)
+**/packs/**/LOCK
+paths-of-peril/paths-of-peril/Tasks.md

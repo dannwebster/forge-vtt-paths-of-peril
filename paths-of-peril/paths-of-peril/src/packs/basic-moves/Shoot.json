@@ -1,0 +1,49 @@
+{
+  "_id": "JM0LYCYT4IfSbD36",
+  "_key": "!items!JM0LYCYT4IfSbD36",
+  "name": "Shoot!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you fire from behind cover, or take aim and shoot at an enemy at range, <strong>roll +Nerve.</strong></p>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Your shot goes wild, or you expose yourself or another Hero. Choose yourself or another Hero. If that Hero is not In Jeopardy!, mark In Jeopardy! If that Hero is In Jeopardy!, unmark it and take a Condition.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Do 1 Harm <strong>OR</strong> 2 Harm, but you must reposition or reload before you can take another shot.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Do 2 Harm <strong>OR</strong> do 3 Harm, but you must reposition or reload before you can take another shot.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Do 3 Harm, or 2 Harm and gain an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "nerve",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

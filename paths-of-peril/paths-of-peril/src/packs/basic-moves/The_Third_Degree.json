@@ -1,0 +1,49 @@
+{
+  "_id": "8sGsOegB2PgYKJd0",
+  "_key": "!items!8sGsOegB2PgYKJd0",
+  "name": "The Third Degree!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you use your charisma or force of personality to get information from another person, <strong>roll +Charm.</strong> If you are trying to use this on a Contact in your Contact List, add the Contact's Rating.</p><p><em>Spend Hold 1-for-1 to ask:</em></p><ul><li>What do you or an associate want?</li><li>What do you or an associate plan to do?</li><li>What are you or an associate hiding?</li><li>What is the greatest power of you or your associate?</li><li>What is the greatest weakness of you or your associate?</li></ul>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Hold 1, but the target becomes hostile, or the Director gives you an answer you wish wasn't true.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Hold 1.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Hold 3. Spend Hold 1-for-1 to ask one of the listed questions, and the Director will answer truthfully.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Hold 3, and you can ask any question instead of just those listed.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "charm",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

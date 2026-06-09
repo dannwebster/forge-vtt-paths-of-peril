@@ -1,0 +1,49 @@
+{
+  "_id": "6Gd2mTlt1CXvY4hA",
+  "_key": "!items!6Gd2mTlt1CXvY4hA",
+  "name": "Reach Out!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>Once per session, you may Reach Out! to a contact in your current Locale. When creating a new Contact, tell the Director their name and Expertise, and <strong>roll +Charm.</strong> You may have a maximum of 5 Contacts. You can replace any Contact with a +0 or higher Rating; Contacts with a -1 Rating must be improved to +0 or greater (with Convince!) before being replaced.</p>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Either you don't find your Contact and find unexpected trouble instead, OR the Contact is a rival or holds an old grudge and MUST be added with a -1 Rating.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>The Contact is neutral towards you. Add them with a Rating of +0.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>The Contact is positively disposed to you or owes you a favor. Add them with a Rating of +1.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>The Contact is an old friend and will do almost anything you ask (within reason). Add them with a Rating of +2.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "charm",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

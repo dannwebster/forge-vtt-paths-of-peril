@@ -1,0 +1,49 @@
+{
+  "_id": "zTmxFoIId216JRtx",
+  "_key": "!items!zTmxFoIId216JRtx",
+  "name": "Convince!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you use your abilities to convince, threaten, or seduce someone into doing something, <strong>roll +Charm.</strong> If you are trying to use Convince! on a Contact in your Contact List, add the Contact's Rating.</p>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>The target complies, but becomes immediately hostile.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>The target changes their agenda to your agenda, but either they need reassurance, payment, or coercion, or their compliance elicits suspicion from someone nearby (Director's choice).</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>The target changes their agenda to your agenda. If you haven't already taken a new Contact this Mystery, you may turn the target into a Contact with Rating +0. If this is an existing Contact, you may add +1 to their Rating (max +3).</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>The target changes their agenda to your agenda. If you haven't already taken a new Contact this Mystery, you may turn the target into a Contact with Rating +1. If this is an existing Contact, you may add +2 to their Rating (max +3).</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "charm",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

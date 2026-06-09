@@ -1,0 +1,272 @@
+# Paths of Peril — pbta Sheet Config
+# Paste the entire contents of this file into:
+#   Game Settings → System Settings (Powered by the Apocalypse) → Sheet Configuration
+# Requires: pbta system v1.1.0+
+
+rollFormula  = "2d6"
+rollShifting = true
+
+# Roll result tier keys MUST match the moveResults keys used in every move item
+# (failure / partial / success / critical).
+[rollResults]
+
+  [rollResults.failure]
+  range = [2, 6]
+  label = "6-"
+
+  [rollResults.partial]
+  range = [7, 9]
+  label = "7-9"
+
+  [rollResults.success]
+  range = [10, 12]
+  label = "10-12"
+
+  [rollResults.critical]
+  range = [13, 99]
+  label = "13+"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Hero (PC)
+# ─────────────────────────────────────────────────────────────────────────────
+
+[actorType.character]
+label    = "Hero"
+playbook = true
+baseType = true
+
+  # Stat keys MUST match the rollType field in every move item.
+  [actorType.character.stats]
+  nerve  = { label = "Nerve",  value = 0 }
+  brains = { label = "Brains", value = 0 }
+  charm  = { label = "Charm",  value = 0 }
+  tough  = { label = "Tough",  value = 0 }
+
+  # Move-group keys MUST match the moveType field in every move item.
+  [actorType.character.moveTypes]
+  basic    = { label = "Basic Moves",    playbook = false }
+  occult   = { label = "Occult Moves",   playbook = false }
+  chase    = { label = "Chase Moves",    playbook = false }
+  playbook = { label = "Playbook Moves", playbook = true  }
+
+  # ── Top bar ───────────────────────────────────────────────────────────────
+
+  [actorType.character.attrTop]
+
+    [actorType.character.attrTop.experience]
+    label = "Experience"
+    type  = "Xp"
+    max   = 5
+
+  # ── Left column ───────────────────────────────────────────────────────────
+
+  [actorType.character.attrLeft]
+
+    [actorType.character.attrLeft.virtue]
+    label = "Virtue"
+    type  = "Text"
+
+    [actorType.character.attrLeft.vice]
+    label = "Vice"
+    type  = "Text"
+
+    # Conditions — non-cumulative; only the highest marked penalty applies.
+    # In Jeopardy! is always taken first; clears at end of a Peril or by burning an Edge.
+    # The text fields below hold the player-written description for each durable condition.
+    [actorType.character.attrLeft.conditions]
+    label     = "Conditions"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "In Jeopardy! (–0, clears at end of Peril)", value = false },
+      { label = "–0 Condition (minor)",                       value = false },
+      { label = "–1 Condition (moderate)",                    value = false },
+      { label = "–2 Condition (severe)",                      value = false }
+    ]
+
+    [actorType.character.attrLeft.condition_desc_0]
+    label = "–0 Condition description"
+    type  = "Text"
+
+    [actorType.character.attrLeft.condition_desc_1]
+    label = "–1 Condition description"
+    type  = "Text"
+
+    [actorType.character.attrLeft.condition_desc_2]
+    label = "–2 Condition description"
+    type  = "Text"
+
+    # Shadows of the Past — mark each as its flashback is narrated to change fate.
+    [actorType.character.attrLeft.shadows_past]
+    label     = "Shadows of the Past"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "A mentor's lesson, and what it taught you",                value = false },
+      { label = "Your fondest memory, and how it brings you strength",       value = false },
+      { label = "A romantic attachment gone awry, and what you learned",     value = false },
+      { label = "The first time you saw someone die, and how it shaped you", value = false },
+      { label = "Your darkest hour, and how you overcame it",                value = false }
+    ]
+
+    # Shadows of the Uncanny — always mark in order from first to last.
+    [actorType.character.attrLeft.shadows_uncanny]
+    label     = "Shadows of the Uncanny"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "Touched by Strangeness — Enlighten! can introduce one strange fact as true",  value = false },
+      { label = "Called down Hidden Paths — clearing a Condition draws Hidden World attention", value = false },
+      { label = "Scarred by Trackless Wastes — Charm –1, Brains +1; unlock The Occult",        value = false },
+      { label = "Bound to Forbidden Worlds — take permanent –0 Obsessed with the Uncanny",     value = false },
+      { label = "Lost to Darkest Legend — retire from play",                                    value = false }
+    ]
+
+  # ── Right column ──────────────────────────────────────────────────────────
+
+  [actorType.character.attrRight]
+
+    [actorType.character.attrRight.look]
+    label = "Look"
+    type  = "LongText"
+
+    # Up to 5 contacts; each has Name · Rating (–1 to +3) · Expertise · Locale · Relationship.
+    [actorType.character.attrRight.contacts]
+    label = "Contacts  (Name | Rating | Expertise | Locale | Relationship)"
+    type  = "LongText"
+
+    # ── Daredevil only — leave blank for other playbooks ─────────────────────
+
+    [actorType.character.attrRight.vehicle_class]
+    label   = "Vehicle Class Specialization (Daredevil)"
+    type    = "ListOne"
+    options = [
+      { label = "Cars",        value = "cars"        },
+      { label = "Trucks",      value = "trucks"      },
+      { label = "Motorcycles", value = "motorcycles" },
+      { label = "Aircraft",    value = "aircraft"    },
+      { label = "Watercraft",  value = "watercraft"  }
+    ]
+
+    [actorType.character.attrRight.vehicle_description]
+    label = "Current Vehicle Description (Daredevil)"
+    type  = "Text"
+
+    # ── Scholar only — leave blank for other playbooks ───────────────────────
+
+    [actorType.character.attrRight.org_description]
+    label = "Organization Description (Scholar)"
+    type  = "LongText"
+
+    [actorType.character.attrRight.org_resources]
+    label     = "Organization Resources (Scholar — pick 2)"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "Well-armed",            value = false },
+      { label = "Well-financed",         value = false },
+      { label = "Rigorous training",     value = false },
+      { label = "Official pull",         value = false },
+      { label = "Cover identities",      value = false },
+      { label = "Offices all over",      value = false },
+      { label = "Good intel",            value = false },
+      { label = "Recognised authority",  value = false },
+      { label = "Support teams",         value = false }
+    ]
+
+    [actorType.character.attrRight.org_red_tape]
+    label     = "Organization Red Tape (Scholar — pick 2)"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "Dubious motives",            value = false },
+      { label = "Bureaucratic",               value = false },
+      { label = "Secretive hierarchy",        value = false },
+      { label = "Cryptic missions",           value = false },
+      { label = "Hostile superiors",          value = false },
+      { label = "Inter-departmental rivalry", value = false },
+      { label = "Budget cuts",                value = false },
+      { label = "Take no prisoners policy",   value = false },
+      { label = "Acquisitive",                value = false }
+    ]
+
+    # ── Soldier only — leave blank for other playbooks ───────────────────────
+
+    [actorType.character.attrRight.sig_weapon_name]
+    label = "Signature Weapon Name (Soldier)"
+    type  = "Text"
+
+    [actorType.character.attrRight.sig_weapon_type]
+    label = "Signature Weapon Type (Soldier)"
+    type  = "Text"
+
+    [actorType.character.attrRight.sig_weapon_description]
+    label = "Signature Weapon Description (Soldier)"
+    type  = "LongText"
+
+    # Pick 4 tags; optionally take 1 drawback tag to gain a 5th regular tag.
+    [actorType.character.attrRight.sig_weapon_tags]
+    label     = "Signature Weapon Tags (Soldier — pick 4; +1 drawback for extra tag)"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "Shoot!",                value = false },
+      { label = "Fight!",                value = false },
+      { label = "Lethal",                value = false },
+      { label = "Non-Lethal",            value = false },
+      { label = "+1 Harm",               value = false },
+      { label = "Concealable",           value = false },
+      { label = "+1 More Harm",          value = false },
+      { label = "Long-Range",            value = false },
+      { label = "Silent",                value = false },
+      { label = "Utility",               value = false },
+      { label = "Loud (drawback)",       value = false },
+      { label = "Messy (drawback)",      value = false },
+      { label = "Unreliable (drawback)", value = false },
+      { label = "Reload (drawback)",     value = false },
+      { label = "Unstable (drawback)",   value = false }
+    ]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Enemy (NPC)
+# ─────────────────────────────────────────────────────────────────────────────
+
+[actorType.npc]
+label    = "Enemy"
+baseType = false
+
+  [actorType.npc.stats]
+
+  [actorType.npc.attrLeft]
+
+    # Harm thresholds by type:
+    #   Mook 1 | Henchman 2 | Heavy 3 | Boss 4 | Villain 4 (→ Retreating, not Taken Out)
+    [actorType.npc.attrLeft.enemy_type]
+    label   = "Enemy Type"
+    type    = "ListOne"
+    options = [
+      { label = "Mook (1 Harm → Taken Out)",             value = "mook"     },
+      { label = "Henchman (2 Harm → Taken Out)",         value = "henchman" },
+      { label = "Heavy (3 Harm → Taken Out)",            value = "heavy"    },
+      { label = "Boss (4 Harm → Taken Out)",             value = "boss"     },
+      { label = "Villain (4 Harm → Retreating)",         value = "villain"  }
+    ]
+
+    # Scratched cannot be removed once applied.
+    # Disabled can be removed: enemy spends an action to re-enter the fight.
+    [actorType.npc.attrLeft.status]
+    label   = "Status"
+    type    = "ListOne"
+    options = [
+      { label = "Unhurt",     value = "unhurt"     },
+      { label = "Scratched",  value = "scratched"  },
+      { label = "Disabled",   value = "disabled"   },
+      { label = "Taken Out",  value = "taken_out"  },
+      { label = "Retreating", value = "retreating" }
+    ]
+
+  [actorType.npc.attrRight]
+
+    [actorType.npc.attrRight.description]
+    label = "Description / Notes"
+    type  = "LongText"

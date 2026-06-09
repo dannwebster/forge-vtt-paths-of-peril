@@ -1,0 +1,49 @@
+{
+  "_id": "wbtVAvwnW4zmRohw",
+  "_key": "!items!wbtVAvwnW4zmRohw",
+  "name": "Look Out!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you Look Out! for danger, <strong>roll +Brains.</strong> If you act on the answers, you get +1 ongoing while the information is relevant.</p><p><em>Spend Hold 1-for-1 to ask:</em></p><ul><li>What's my best way in?</li><li>What's my best way out?</li><li>Are there any dangers we haven't noticed?</li><li>What's the biggest threat?</li><li>What's most vulnerable to me?</li><li>What's the best way to protect the victims?</li></ul>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Hold 1, but the answers you get will be terrible for you.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Hold 1.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Hold 3.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Hold 3, and you may ask the Director any question you want about the situation, not just the listed ones.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "brains",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

@@ -1,0 +1,49 @@
+{
+  "_id": "x7WyhA1rKEYlFJSa",
+  "_key": "!items!x7WyhA1rKEYlFJSa",
+  "name": "The Occult!",
+  "type": "move",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "description": "<p><em>Available once you have taken the Shadow of the Uncanny \"Scarred by Trackless Wastes.\"</em></p><p>When you reach out to the Uncanny forces that Shadow our mundane world, describe how the ritual works. <strong>Choose an attribute and roll +that attribute.</strong> The Director may say the ritual requires weird materials; will take 1 minute, 10 minutes, or 1 hour; requires chanting and gestures; requires arcane symbols; needs one or two helpers; or needs a tome of magic.</p><p><strong>Spend Hold (by the attribute you rolled):</strong></p><ul><li><strong>+Nerve:</strong> Banish a spirit or curse; bar a place or portal to a person or creature type; trap a person within an area.</li><li><strong>+Brains:</strong> Observe another place or time; absorb the knowledge of a place, person, or item; remove any Condition from a Hero (even their highest).</li><li><strong>+Charm:</strong> Bargain with a spirit for secrets (ask 2 Investigate! questions); communicate across a language barrier; add +1 Rating (max +2) to a Contact.</li><li><strong>+Tough:</strong> Inflict 2 Harm at a distance with no obvious source; enchant a weapon (add or remove a Tag); do one thing beyond human physical limitations.</li></ul>",
+    "moveType": "occult",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Something goes horribly wrong — take a Condition and the Director describes the nature of the larger calamity.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Hold 1 and take a Condition.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Hold 1 <strong>OR</strong> Hold 2 and take a Condition.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Hold 2.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "ask",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

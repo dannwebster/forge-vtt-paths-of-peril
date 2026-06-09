@@ -1,0 +1,48 @@
+{
+  "id": "paths-of-peril",
+  "title": "Paths of Peril — Moves",
+  "description": "Basic and special move compendia for Paths of Peril, a custom PbtA game. Requires Asacolips' Powered by the Apocalypse system and the Paths of Peril sheet config.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "authors": [
+    { "name": "Paths of Peril" }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "pbta",
+        "type": "system",
+        "manifest": "https://asacolips-artifacts.s3.amazonaws.com/pbta/latest/system.json",
+        "compatibility": { "minimum": "1.1.0" }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "basic-moves",
+      "label": "Paths of Peril — Basic Moves",
+      "path": "packs/basic-moves",
+      "type": "Item",
+      "system": "pbta",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "special-moves",
+      "label": "Paths of Peril — Special Moves (Occult & Chase)",
+      "path": "packs/special-moves",
+      "type": "Item",
+      "system": "pbta",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Paths of Peril",
+      "sorting": "m",
+      "packs": ["basic-moves", "special-moves"]
+    }
+  ]
+}

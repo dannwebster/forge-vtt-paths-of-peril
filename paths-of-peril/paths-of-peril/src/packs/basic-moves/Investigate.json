@@ -1,0 +1,49 @@
+{
+  "_id": "lUfAefStcZL6jwBO",
+  "_key": "!items!lUfAefStcZL6jwBO",
+  "name": "Investigate!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you Investigate!, <strong>roll +Brains.</strong></p><p><em>Spend Hold 1-for-1 to ask:</em></p><ul><li>What happened here, in the real sequence of events?</li><li>What force or influence is at work (human, occult, institutional, etc)?</li><li>What person, organization, or faction is implicated?</li><li>What can it do (capabilities, reach, constraints)?</li><li>What is the vulnerability (what disrupts, binds, exposes, or hurts it)?</li><li>Where does this lead next?</li><li>What is being concealed, and who benefits from the concealment?</li><li>What hidden history or suppressed scholarship underlies this?</li></ul>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Hold 1, but you learn something terrible that you wish wasn't true.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Hold 1.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Hold 2.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Hold 2, and you may ask the Director any question you want about the mystery, not just the listed ones.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "brains",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

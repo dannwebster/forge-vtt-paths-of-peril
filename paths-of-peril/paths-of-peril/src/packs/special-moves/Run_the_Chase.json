@@ -1,0 +1,49 @@
+{
+  "_id": "R6kGW0KQZrvfDqG8",
+  "_key": "!items!R6kGW0KQZrvfDqG8",
+  "name": "Run the Chase",
+  "type": "move",
+  "img": "icons/svg/wing.svg",
+  "system": {
+    "description": "<p>When you take the lead in a Chase segment, say how you overcome the immediate obstacle and <strong>roll with the fitting attribute.</strong></p><ul><li><strong>Nerve:</strong> sprint, leap, drive, dodge, or react fast.</li><li><strong>Brains:</strong> outthink, navigate, predict, or improvise a route.</li><li><strong>Charm:</strong> bluff, command, distract, or intimidate.</li><li><strong>Tough:</strong> smash through, shove aside, or fight your way through.</li></ul>",
+    "moveType": "chase",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Fill in 1 Chase Clock segment, and the Lead chooses to either lose 1 Ground, or remain neutral but put a Hero of the Lead's choice In Jeopardy!</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Fill in 1 Chase Clock segment, and the Lead chooses to either remain neutral, or gain 1 Ground and put a Hero of the Lead's choice In Jeopardy!</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Fill in 1 Chase Clock segment and gain 1 Ground.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Fill in 1 Chase Clock segment and gain 1 Ground, plus the Lead gains an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "ask",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

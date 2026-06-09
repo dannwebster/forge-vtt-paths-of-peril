@@ -1,0 +1,49 @@
+{
+  "_id": "qwVmkgCfrWeJIj6d",
+  "_key": "!items!qwVmkgCfrWeJIj6d",
+  "name": "Sneak!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you try to evade detection, elude capture, disguise yourself, or otherwise sneak around, <strong>roll +Nerve.</strong></p>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>You are noticed, but still have a chance to escape.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>As above, but it's complicated. The Director chooses 1:</p><ul><li>Someone unimportant noticed you, but that just made them important, right?</li><li>You are perceived only by a secondary sense (a scent while stalking; seen whispering but unheard).</li><li>You must leave something important behind or be discovered.</li></ul>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Everyone that should fall for it falls for it.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Everyone that should fall for it falls for it, and you get a little something extra. Gain an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "nerve",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

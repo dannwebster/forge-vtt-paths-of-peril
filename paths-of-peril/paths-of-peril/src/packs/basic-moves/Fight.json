@@ -1,0 +1,49 @@
+{
+  "_id": "sNzIM1k46CqA2WNs",
+  "_key": "!items!sNzIM1k46CqA2WNs",
+  "name": "Fight!",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you turn to violence and it is up close and personal, regardless of whether you are using melee or ranged weapons, <strong>roll +Tough.</strong></p>",
+    "moveType": "basic",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>If you are not In Jeopardy!, mark In Jeopardy! If you are In Jeopardy!, unmark it and take a Condition.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Deal 1 Harm <strong>OR</strong> gain an Edge <strong>OR</strong>, if you are not already In Jeopardy!, deal 2 Harm and mark In Jeopardy!</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Deal 2 Harm <strong>OR</strong> deal 1 Harm and gain an Edge <strong>OR</strong>, if you are not already In Jeopardy!, deal 3 Harm and mark In Jeopardy!</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Deal 3 Harm <strong>OR</strong> deal 2 Harm and gain an Edge <strong>OR</strong>, if you are not already In Jeopardy!, deal 4 Harm and mark In Jeopardy!</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "tough",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}
