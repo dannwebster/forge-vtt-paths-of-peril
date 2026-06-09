@@ -62,13 +62,21 @@
       "type": "Item",
       "system": "pbta",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "playbooks",
+      "label": "Paths of Peril — Playbooks",
+      "path": "packs/playbooks",
+      "type": "Item",
+      "system": "pbta",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }
   ],
   "packFolders": [
     {
       "name": "Paths of Peril",
       "sorting": "m",
-      "packs": ["basic-moves", "special-moves", "scholar-moves", "daredevil-moves", "soldier-moves"]
+      "packs": ["basic-moves", "special-moves", "scholar-moves", "daredevil-moves", "soldier-moves", "playbooks"]
     }
   ]
 }

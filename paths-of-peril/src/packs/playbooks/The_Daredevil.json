@@ -1,0 +1,26 @@
+{
+  "_id": "DrvlPbKxQnMvZyTs",
+  "_key": "!items!DrvlPbKxQnMvZyTs",
+  "name": "The Daredevil",
+  "type": "playbook",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>You live for speed, danger, and the split-second thrill of doing the impossible behind the wheel — or the throttle, or the stick. Vehicles are your domain, and no situation is too hairy to drive out of.</p><p><strong>Key stats:</strong> Nerve &amp; Charm</p>",
+    "slug": "the-daredevil",
+    "actorType": "",
+    "stats": {},
+    "statsDetail": "",
+    "attributes": {},
+    "choiceSets": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

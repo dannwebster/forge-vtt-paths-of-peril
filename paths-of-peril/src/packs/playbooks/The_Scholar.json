@@ -1,0 +1,26 @@
+{
+  "_id": "ScHlrPbKxQnMvZyT",
+  "_key": "!items!ScHlrPbKxQnMvZyT",
+  "name": "The Scholar",
+  "type": "playbook",
+  "img": "icons/svg/book.svg",
+  "system": {
+    "description": "<p>You are an expert in knowledge, research, and networks of influence. Where others punch their way through problems, you know what to look for — and who to ask. Your Organization is your greatest resource, for good and ill.</p><p><strong>Key stats:</strong> Brains &amp; Charm</p>",
+    "slug": "the-scholar",
+    "actorType": "",
+    "stats": {},
+    "statsDetail": "",
+    "attributes": {},
+    "choiceSets": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

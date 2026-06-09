@@ -1,0 +1,26 @@
+{
+  "_id": "SldPbKxQnMvZyTrW",
+  "_key": "!items!SldPbKxQnMvZyTrW",
+  "name": "The Soldier",
+  "type": "playbook",
+  "img": "icons/svg/combat.svg",
+  "system": {
+    "description": "<p>The war left marks on you that never fully healed — but it also made you harder, sharper, and deadlier than anyone else in the room. You bring tactical thinking and controlled violence to every situation.</p><p><strong>Key stats:</strong> Nerve &amp; Tough</p>",
+    "slug": "the-soldier",
+    "actorType": "",
+    "stats": {},
+    "statsDetail": "",
+    "attributes": {},
+    "choiceSets": []
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}
