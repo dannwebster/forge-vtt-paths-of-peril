@@ -1,0 +1,25 @@
+name: Release Module
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create module zip
+        run: cd paths-of-peril && zip -r ../module.zip .
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            module.zip
+            paths-of-peril/module.json
