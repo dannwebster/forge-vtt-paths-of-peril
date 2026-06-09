@@ -1,0 +1,49 @@
+{
+  "_id": "xS8rKcPqBnJyTvLm",
+  "_key": "!items!xS8rKcPqBnJyTvLm",
+  "name": "Call Upon Your Organization",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you are in good standing with your Organization, and you have the means to contact them, once per Session, <strong>roll +Brains.</strong></p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>They ask you to do something bad or give what they think you should want.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>They will give you the help they ask for, but they will give you a task to accomplish as well. If you refuse or fail the task, you will be in trouble with the Organization.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>They provide some useful info or help in the field.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>They provide some useful info or help in the field, and you get an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "brains",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

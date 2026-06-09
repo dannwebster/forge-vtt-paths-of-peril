@@ -1,0 +1,49 @@
+{
+  "_id": "bKrNpEgYmCzLvQsJ",
+  "_key": "!items!bKrNpEgYmCzLvQsJ",
+  "name": "Preparedness",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you need something unusual or rare, <strong>roll +Brains.</strong></p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>You know where it is, but it's somewhere real bad.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>You have it, but it is flawed or limited in some way. The Director will tell you how.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>You have it here right now.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>You have it, and it's perfect. Gain an Edge when using the item.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "brains",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

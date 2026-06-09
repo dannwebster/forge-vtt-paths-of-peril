@@ -1,0 +1,49 @@
+{
+  "_id": "fWqTxHsBnDkRvPmY",
+  "_key": "!items!fWqTxHsBnDkRvPmY",
+  "name": "Academic Network",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>Fill in one of the slots in your Contacts List with the name of your academic network, and the following values: Rating: +1, Expertise: Academia, Locale: Everywhere, Relationship: Academic Network. Whenever you need a Contact that specializes in a specific academic subject, you can declare them without rolling. For a move that allows you to upgrade the Contact, you may write that Contact's specific Name and Expertise, and set the Rating to +2.</p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": ""
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": ""
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": ""
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "rollType": "",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

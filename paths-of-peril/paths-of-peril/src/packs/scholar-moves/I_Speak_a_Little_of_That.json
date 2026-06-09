@@ -1,0 +1,49 @@
+{
+  "_id": "pLgBsXcNtRyWqKvE",
+  "_key": "!items!pLgBsXcNtRyWqKvE",
+  "name": "I Speak a Little of That",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>Choose one culture: European, Asian, African. You are fluent in all Lingua Franca of that culture. Additionally, when you encounter any language outside your fluency in any context (ancient inscription, isolated tribesman, etc), <strong>roll +Brains:</strong></p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>You speak a few words in the language, but will need to find an expert to do more than order coffee or find the bathroom.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>You have some familiarity with the language. You get -1 on all related rolls.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>You are fluent in the language, and get +0 on all related rolls.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>You speak the language like a native. You get +1 on all rolls where that language would come into play, such as Convince!, 3rd Degree!, Investigate, etc.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "brains",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

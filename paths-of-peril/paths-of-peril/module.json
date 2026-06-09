@@ -36,13 +36,21 @@
       "type": "Item",
       "system": "pbta",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "scholar-moves",
+      "label": "Paths of Peril — Scholar Moves",
+      "path": "packs/scholar-moves",
+      "type": "Item",
+      "system": "pbta",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }
   ],
   "packFolders": [
     {
       "name": "Paths of Peril",
       "sorting": "m",
-      "packs": ["basic-moves", "special-moves"]
+      "packs": ["basic-moves", "special-moves", "scholar-moves"]
     }
   ]
 }
