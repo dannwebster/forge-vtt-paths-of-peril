@@ -1,0 +1,49 @@
+{
+  "_id": "DareHellWheels01",
+  "_key": "!items!DareHellWheels01",
+  "name": "Hell on Wheels/Wings/Water",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you're vehicle or piloting your Vehicle Class in a high-pressure situation, <strong>roll +Nerve.</strong></p><p><em>You may spend 1 hold to do one of the following:</em></p><ul><li>Add or subtract 1 Segment from a Chase</li><li>Unmark In Jeopardy! for anyone in the vehicle</li><li>Avoid one external danger (a burst of gunfire, a collision, etc)</li><li>Escape one pursuing vehicle</li><li>Maintain control of the vehicle</li><li>Impress, dismay or frighten someone</li></ul>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Hold 1, but you put some strain on your vehicle. The Director will tell you how.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Hold 1.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Hold 3.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Hold 3 and gain an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "nerve",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

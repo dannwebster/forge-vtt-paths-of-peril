@@ -44,13 +44,29 @@
       "type": "Item",
       "system": "pbta",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "daredevil-moves",
+      "label": "Paths of Peril — Daredevil Moves",
+      "path": "packs/daredevil-moves",
+      "type": "Item",
+      "system": "pbta",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "soldier-moves",
+      "label": "Paths of Peril — Soldier Moves",
+      "path": "packs/soldier-moves",
+      "type": "Item",
+      "system": "pbta",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }
   ],
   "packFolders": [
     {
       "name": "Paths of Peril",
       "sorting": "m",
-      "packs": ["basic-moves", "special-moves", "scholar-moves"]
+      "packs": ["basic-moves", "special-moves", "scholar-moves", "daredevil-moves", "soldier-moves"]
     }
   ]
 }

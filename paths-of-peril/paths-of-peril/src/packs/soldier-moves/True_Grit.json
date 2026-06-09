@@ -1,0 +1,49 @@
+{
+  "_id": "TrGtNmQkPxBvZyCf",
+  "_key": "!items!TrGtNmQkPxBvZyCf",
+  "name": "True Grit",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>You can overcome danger through sheer brawn and grit. Any time you are In Jeopardy!, you can roll +Tough.</p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>You are still In Jeopardy!, but it is somehow just a little worse. The Director will tell you how.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Unmark In Jeopardy!, but lose any Edges you have.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Unmark In Jeopardy! and gain an Edge.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Unmark In Jeopardy! and clear your lowest severity Condition. If you have no Conditions, gain an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "tough",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

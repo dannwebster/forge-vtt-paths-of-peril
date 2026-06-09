@@ -1,0 +1,49 @@
+{
+  "_id": "SbTrNvQxBpZyMfKd",
+  "_key": "!items!SbTrNvQxBpZyMfKd",
+  "name": "Saboteur",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>When you use Sneak! to infiltrate a secure area alone, roll +Nerve. Spend Hold to: bypass a security system or guard; leave a trap for the unwary; disable a guard; disable a security system you have bypassed.</p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Gain 1 Hold, but you find something unwanted along the way.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Gain 1 Hold.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Gain 3 Hold.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Gain 3 Hold and gain an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "nerve",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

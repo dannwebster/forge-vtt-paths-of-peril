@@ -1,0 +1,49 @@
+{
+  "_id": "DareGearhead0001",
+  "_key": "!items!DareGearhead0001",
+  "name": "Gearhead",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>You are an expert in all things mechanical. When trying to fix or sabotage a mechanical device, <strong>roll +Nerve.</strong></p><p><em>You may spend 1 Hold one for one to one of the following:</em></p><ul><li>You make something broken work unreliably</li><li>You make something unreliable work perfectly</li><li>You make something in perfect working order work better than ever</li><li>You learn something unexpected. Ask an Investigate! Question</li><li>You make your changes undetectable or undetectably</li><li>You make it malfunction or self-destruct unreliably at some specified time in the future</li></ul>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": "<p>Hold 1, but the Director will tell you how something goes unexpectedly wrong.</p>"
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": "<p>Hold 1.</p>"
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": "<p>Hold 3.</p>"
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": "<p>Hold 3 and gain an Edge.</p>"
+      }
+    },
+    "uses": 0,
+    "rollType": "nerve",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}

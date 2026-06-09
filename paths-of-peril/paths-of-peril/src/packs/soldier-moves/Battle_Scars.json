@@ -1,0 +1,49 @@
+{
+  "_id": "BtScKrWxQnMvZpYc",
+  "_key": "!items!BtScKrWxQnMvZpYc",
+  "name": "Battle Scars",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>The war has left you with deep physical and/or psychological wounds (represented by your Vice), but with those wounds comes wisdom. When using your Vice to clear a Condition, gain 1 Hold that may be traded 1 for 1 to ask any Investigate! or The Third Degree! question about any situation or person encountered so far.</p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": {
+        "key": "system.moveResults.failure.value",
+        "label": "6-",
+        "value": ""
+      },
+      "partial": {
+        "key": "system.moveResults.partial.value",
+        "label": "7-9",
+        "value": ""
+      },
+      "success": {
+        "key": "system.moveResults.success.value",
+        "label": "10-12",
+        "value": ""
+      },
+      "critical": {
+        "key": "system.moveResults.critical.value",
+        "label": "13+",
+        "value": ""
+      }
+    },
+    "uses": 0,
+    "rollType": "",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "pbta"
+  },
+  "sort": 0
+}
