@@ -17,29 +17,38 @@ npm install -g @foundryvtt/foundryvtt-cli
 Compile source JSON → LevelDB packs (do this after editing any `src/packs/` file):
 
 ```bash
-fvtt package pack basic-moves   --in src/packs/basic-moves   --out packs
-fvtt package pack special-moves --in src/packs/special-moves --out packs
+fvtt package pack basic-moves     --in src/packs/basic-moves     --out packs
+fvtt package pack special-moves   --in src/packs/special-moves   --out packs
+fvtt package pack scholar-moves   --in src/packs/scholar-moves   --out packs
+fvtt package pack daredevil-moves --in src/packs/daredevil-moves --out packs
+fvtt package pack soldier-moves   --in src/packs/soldier-moves   --out packs
 ```
 
-Run these from the module root: `paths-of-peril/paths-of-peril/`.
+Run these from the module root: `paths-of-peril/`.
 
 Extract LevelDB → editable JSON (do this if you need to inspect what is in the compiled packs):
 
 ```bash
-fvtt package unpack basic-moves   --in packs --out src/packs/basic-moves
-fvtt package unpack special-moves --in packs --out src/packs/special-moves
+fvtt package unpack basic-moves     --in packs --out src/packs/basic-moves
+fvtt package unpack special-moves   --in packs --out src/packs/special-moves
+fvtt package unpack scholar-moves   --in packs --out src/packs/scholar-moves
+fvtt package unpack daredevil-moves --in packs --out src/packs/daredevil-moves
+fvtt package unpack soldier-moves   --in packs --out src/packs/soldier-moves
 ```
 
 ## Directory layout
 
 ```
-paths-of-peril/paths-of-peril/   ← the actual Foundry module folder (double-nested)
-  module.json                    ← module manifest (id, compatibility, pack declarations)
-  packs/                         ← compiled LevelDB binaries (do not edit by hand)
-  src/packs/                     ← human-editable JSON source for compendium entries
-    basic-moves/                 ← 12 basic move items
-    special-moves/               ← 2 special move items (Occult, Chase)
-Paths of Peril Rules.md          ← full game rules (authoritative reference)
+paths-of-peril/          ← the Foundry module folder
+  module.json            ← module manifest (id, compatibility, pack declarations)
+  packs/                 ← compiled LevelDB binaries (do not edit by hand)
+  src/packs/             ← human-editable JSON source for compendium entries
+    basic-moves/         ← 12 basic move items
+    special-moves/       ← 2 special move items (Occult, Chase)
+    scholar-moves/       ← 7 Scholar playbook moves
+    daredevil-moves/     ← 7 Daredevil playbook moves
+    soldier-moves/       ← 8 Soldier playbook moves
+reference/               ← game reference docs (rules, playbook PDFs)
 ```
 
 ## Move JSON schema
@@ -66,7 +75,7 @@ Mismatched names cause moves to render empty in the UI.
 
 ## Game mechanics reference
 
-The full rules are in `Paths of Peril Rules.md`. Key concepts for automation work:
+The full rules are in `reference/Paths of Peril Rules.md`. Key concepts for automation work:
 
 - **In Jeopardy!** — buffer condition; taken before Durable Conditions (−0, −1, −2)
 - **Conditions** — non-cumulative; only the highest-marked penalty applies
