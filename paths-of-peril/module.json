@@ -2,7 +2,7 @@
   "id": "paths-of-peril",
   "title": "Paths of Peril — Moves",
   "description": "Basic and special move compendia for Paths of Peril, a custom PbtA game. Requires Asacolips' Powered by the Apocalypse system and the Paths of Peril sheet config.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "manifest": "https://github.com/dannwebster/forge-vtt-paths-of-peril/releases/latest/download/module.json",
   "download": "https://github.com/dannwebster/forge-vtt-paths-of-peril/releases/latest/download/module.zip",
   "compatibility": {
