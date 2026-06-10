@@ -11,7 +11,38 @@
     "stats": {},
     "statsDetail": "",
     "attributes": {},
-    "choiceSets": []
+    "choiceSets": [
+      {
+        "title": "Mandatory Soldier Move",
+        "desc": "You always get this move.",
+        "type": "multi",
+        "repeatable": false,
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0,
+        "choices": [
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.BtScKrWxQnMvZpYc", "img": null, "granted": false, "advancement": 0 }
+        ]
+      },
+      {
+        "title": "Soldier Moves",
+        "desc": "Pick 3 of the following moves.",
+        "type": "multi",
+        "repeatable": false,
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0,
+        "choices": [
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.CrCtWdRlFmJnPxBv", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.SnPrLtRgKyMnBvZq", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.TrGtNmQkPxBvZyCf", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.TcGnSxRkFmJpBvZq", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.InTmDtQkPxBvZyNr", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.StAwNvQkPxBrZyMf", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.soldier-moves.Item.SbTrNvQxBpZyMfKd", "img": null, "granted": false, "advancement": 0 }
+        ]
+      }
+    ]
   },
   "effects": [],
   "folder": null,

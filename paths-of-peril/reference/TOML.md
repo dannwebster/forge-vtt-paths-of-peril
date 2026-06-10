@@ -67,14 +67,19 @@ label = "Hero"          # display name in Foundry
   [character.equipmentTypes]
   gear = "Gear"         # at least one entry required
 
-  [character.attributesTop]   # renders at top of sheet
+  [character.attributesTop]    # renders at top of sheet
     [character.attributesTop.experience]
     type = "Xp"
     max  = 5
 
-  [character.attributesLeft]  # renders in left/main column
+  [character.attributesLeft]   # renders in left column
     [character.attributesLeft.virtue]
     type = "Text"
+
+  [character.attributesRight]  # renders in right column
+    [character.attributesRight.shadows_past]
+    type = "ListMany"
+    # ...
 ```
 
 NPCs follow the same rules but typically have no stats:
@@ -142,7 +147,7 @@ options   = [
 | `[actorType.character]` | Use `[character]` (top-level) |
 | `nerve = { label = "Nerve", value = 0 }` in stats | Use `nerve = "Nerve"` |
 | `range = [2, 6]` in rollResults | Use `range = "6-"` |
-| `[character.attrTop]` / `[character.attrLeft]` | Use `attributesTop` / `attributesLeft` |
+| `[character.attrTop]` / `[character.attrLeft]` / `[character.attrRight]` | Use `attributesTop` / `attributesLeft` / `attributesRight` |
 | Missing `equipmentTypes` | Required for every actor type; add `gear = "Gear"` at minimum |
 | Missing `moveTypes` | Required for every actor type |
 | Options with `value = false` | `value` is ignored; only `label` (and optional `tooltip`) are read |

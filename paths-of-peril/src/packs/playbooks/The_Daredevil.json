@@ -11,7 +11,37 @@
     "stats": {},
     "statsDetail": "",
     "attributes": {},
-    "choiceSets": []
+    "choiceSets": [
+      {
+        "title": "Mandatory Daredevil Move",
+        "desc": "You always get this move.",
+        "type": "multi",
+        "repeatable": false,
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0,
+        "choices": [
+          { "uuid": "Compendium.paths-of-peril.daredevil-moves.Item.DareHellWheels01", "img": null, "granted": false, "advancement": 0 }
+        ]
+      },
+      {
+        "title": "Daredevil Moves",
+        "desc": "Pick 3 of the following moves.",
+        "type": "multi",
+        "repeatable": false,
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0,
+        "choices": [
+          { "uuid": "Compendium.paths-of-peril.daredevil-moves.Item.DareAceEngines01", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.daredevil-moves.Item.DareNoGutsGlory1", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.daredevil-moves.Item.DareVehHomicide1", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.daredevil-moves.Item.DareGearhead0001", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.daredevil-moves.Item.DareCoolAsIce001", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.daredevil-moves.Item.DareIntuitNav001", "img": null, "granted": false, "advancement": 0 }
+        ]
+      }
+    ]
   },
   "effects": [],
   "folder": null,

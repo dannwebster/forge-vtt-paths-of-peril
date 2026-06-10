@@ -11,7 +11,37 @@
     "stats": {},
     "statsDetail": "",
     "attributes": {},
-    "choiceSets": []
+    "choiceSets": [
+      {
+        "title": "Mandatory Scholar Move",
+        "desc": "You always get this move.",
+        "type": "multi",
+        "repeatable": false,
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0,
+        "choices": [
+          { "uuid": "Compendium.paths-of-peril.scholar-moves.Item.xS8rKcPqBnJyTvLm", "img": null, "granted": false, "advancement": 0 }
+        ]
+      },
+      {
+        "title": "Scholar Moves",
+        "desc": "Pick 3 of the following moves.",
+        "type": "multi",
+        "repeatable": false,
+        "grantOn": 0,
+        "granted": false,
+        "advancement": 0,
+        "choices": [
+          { "uuid": "Compendium.paths-of-peril.scholar-moves.Item.mVdFwRzQjHkNeAuY", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.scholar-moves.Item.pLgBsXcNtRyWqKvE", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.scholar-moves.Item.hJnMcTfDkPwVsRuX", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.scholar-moves.Item.bKrNpEgYmCzLvQsJ", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.scholar-moves.Item.fWqTxHsBnDkRvPmY", "img": null, "granted": false, "advancement": 0 },
+          { "uuid": "Compendium.paths-of-peril.scholar-moves.Item.dCpZsRjMqFnKtXvB", "img": null, "granted": false, "advancement": 0 }
+        ]
+      }
+    ]
   },
   "effects": [],
   "folder": null,

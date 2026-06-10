@@ -63,17 +63,17 @@ label = "Hero"
     label = "Look"
     type  = "LongText"
 
-  # ── Left column ───────────────────────────────────────────────────────────
-
-  [character.attributesLeft]
-
-    [character.attributesLeft.virtue]
+    [character.attributesTop.virtue]
     label = "Virtue"
     type  = "Text"
 
-    [character.attributesLeft.vice]
+    [character.attributesTop.vice]
     label = "Vice"
     type  = "Text"
+
+  # ── Left column ───────────────────────────────────────────────────────────
+
+  [character.attributesLeft]
 
     # Conditions — non-cumulative; only the highest marked penalty applies.
     # In Jeopardy! is always taken first; clears at end of a Peril or by burning an Edge.
@@ -82,10 +82,10 @@ label = "Hero"
     type      = "ListMany"
     condition = false
     options   = [
-      { label = "In Jeopardy! (–0, clears at end of Peril)" },
-      { label = "–0 Condition (minor)"                       },
-      { label = "–1 Condition (moderate)"                    },
-      { label = "–2 Condition (severe)"                      }
+      { label = "In Jeopardy! (–0)" },
+      { label = "–0 Condition"      },
+      { label = "–1 Condition"      },
+      { label = "–2 Condition"      }
     ]
 
     [character.attributesLeft.condition_desc_0]
@@ -99,36 +99,6 @@ label = "Hero"
     [character.attributesLeft.condition_desc_2]
     label = "–2 Condition description"
     type  = "Text"
-
-    # Shadows of the Past — mark each as its flashback is narrated to change fate.
-    [character.attributesLeft.shadows_past]
-    label     = "Shadows of the Past"
-    type      = "ListMany"
-    condition = false
-    options   = [
-      { label = "A mentor's lesson, and what it taught you"                },
-      { label = "Your fondest memory, and how it brings you strength"       },
-      { label = "A romantic attachment gone awry, and what you learned"     },
-      { label = "The first time you saw someone die, and how it shaped you" },
-      { label = "Your darkest hour, and how you overcame it"                }
-    ]
-
-    # Shadows of the Uncanny — always mark in order from first to last.
-    [character.attributesLeft.shadows_uncanny]
-    label     = "Shadows of the Uncanny"
-    type      = "ListMany"
-    condition = false
-    options   = [
-      { label = "Touched by Strangeness — Enlighten! can introduce one strange fact as true"  },
-      { label = "Called down Hidden Paths — clearing a Condition draws Hidden World attention" },
-      { label = "Scarred by Trackless Wastes — Charm –1, Brains +1; unlock The Occult"        },
-      { label = "Bound to Forbidden Worlds — take permanent –0 Obsessed with the Uncanny"     },
-      { label = "Lost to Darkest Legend — retire from play"                                    }
-    ]
-
-    [character.attributesLeft.look]
-    label = "Look"
-    type  = "LongText"
 
     # Up to 5 contacts; each has Name · Rating (–1 to +3) · Expertise · Locale · Relationship.
     [character.attributesLeft.contacts]
@@ -225,6 +195,36 @@ label = "Hero"
       { label = "Unreliable (drawback)" },
       { label = "Reload (drawback)"     },
       { label = "Unstable (drawback)"   }
+    ]
+
+  # ── Right column ──────────────────────────────────────────────────────────
+
+  [character.attributesRight]
+
+    # Shadows of the Past — mark each as its flashback is narrated to change fate.
+    [character.attributesRight.shadows_past]
+    label     = "Shadows of the Past"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "A mentor's lesson, and what it taught you"                    },
+      { label = "Your fondest memory, and how it brings you strength"           },
+      { label = "A romantic attachment gone awry, and what you learned from it" },
+      { label = "The first time you saw someone die, and how it shaped you"     },
+      { label = "Your darkest hour, and how you overcame it"                    }
+    ]
+
+    # Shadows of the Uncanny — always mark in order from first to last.
+    [character.attributesRight.shadows_uncanny]
+    label     = "Shadows of the Uncanny"
+    type      = "ListMany"
+    condition = false
+    options   = [
+      { label = "Touched by Strangeness — When you Enlighten!, include one strange fact that is not part of real-world history. This is now true." },
+      { label = "Called down Hidden Paths — When you indulge a Virtue or Vice to clear a Condition, the Hidden World notices. You or the Director introduces a strange sign, supernatural clue, watchful interloper, etc." },
+      { label = "Scarred by Trackless Wastes — Reduce your Charm by 1 and increase your Brains by 1. Any serious conversation you have eventually bends toward the Unnatural. You may now attempt The Occult Move." },
+      { label = "Bound to Forbidden Worlds — Take the -0 Condition \"Obsessed with the Uncanny\" (This overrides any existing -0 Condition). This Condition cannot be cleared." },
+      { label = "Lost to Darkest Legend — Retire your character from play. Their obsession has overtaken their ordinary life, and they vanish into the Weird as a rumor, warning, relic-hunter, cultist, guardian, or legend." }
     ]
 
 # ─────────────────────────────────────────────────────────────────────────────

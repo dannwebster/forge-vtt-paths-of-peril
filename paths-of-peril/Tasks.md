@@ -32,3 +32,7 @@ Chase scene tools
 Trap tools
 - [ ] Obstacle Rating dice pool roller (1–7 dice, results 1–6)
 - [ ] Obstacle Evolve logic (reroll + track new obstacle type)
+
+Build
+- [ ] Option B — Gitignore packs/, compile in CI (cleaner)      
+- [ ] Add a GitHub Actions workflow that runs `fvtt package pack` for each pack and then builds the release zip. The repo stays clean (only human-editable JSON in src/packs/), and the compiled artifacts never touch git history.
