@@ -1,0 +1,29 @@
+{
+  "_id": "SgWpnSoldier0001",
+  "_key": "!items!SgWpnSoldier0001",
+  "name": "Signature Weapon",
+  "type": "move",
+  "img": "icons/svg/dice-target.svg",
+  "system": {
+    "description": "<p>In addition to your regular gear, you have one Signature Weapon. Edit this move on your sheet to record your weapon's details.</p><p><strong>Name:</strong> _______________ &nbsp; <strong>Weapon Type:</strong> _______________</p><p><strong>Description:</strong> _______________</p><p>Choose <strong>4 tags</strong> from below:</p><ul><li>☐ Shoot!</li><li>☐ Fight!</li><li>☐ Lethal</li><li>☐ Non-Lethal</li><li>☐ +1 Harm</li><li>☐ Concealable</li><li>☐ +1 More Harm</li><li>☐ Long-Range</li><li>☐ Silent</li><li>☐ Utility: _______________</li></ul><p>You may take <strong>1 drawback</strong> to add an additional tag from above:</p><p>☐ Loud &nbsp; ☐ Messy &nbsp; ☐ Unreliable &nbsp; ☐ Reload &nbsp; ☐ Unstable</p><p><em>If you lose your Signature Weapon, you will always get a chance to recover it or to acquire a replacement.</em></p>",
+    "moveType": "playbook",
+    "rollFormula": "",
+    "moveResults": {
+      "failure": { "key": "system.moveResults.failure.value", "label": "6-",    "value": "" },
+      "partial":  { "key": "system.moveResults.partial.value",  "label": "7-9",  "value": "" },
+      "success":  { "key": "system.moveResults.success.value",  "label": "10-12","value": "" },
+      "critical": { "key": "system.moveResults.critical.value", "label": "13+",  "value": "" }
+    },
+    "uses": 0,
+    "rollType": "",
+    "rollMod": 0,
+    "actorType": "",
+    "choices": ""
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "ownership": { "default": 0 },
+  "_stats": { "systemId": "pbta" },
+  "sort": 0
+}

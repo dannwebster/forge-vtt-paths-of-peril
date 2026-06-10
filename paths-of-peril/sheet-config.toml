@@ -160,43 +160,6 @@ label = "Hero"
       { label = "Acquisitive"                }
     ]
 
-    # ── Soldier only — leave blank for other playbooks ───────────────────────
-
-    [character.attributesLeft.sig_weapon_name]
-    label = "Signature Weapon Name (Soldier)"
-    type  = "Text"
-
-    [character.attributesLeft.sig_weapon_type]
-    label = "Signature Weapon Type (Soldier)"
-    type  = "Text"
-
-    [character.attributesLeft.sig_weapon_description]
-    label = "Signature Weapon Description (Soldier)"
-    type  = "LongText"
-
-    # Pick 4 tags; optionally take 1 drawback tag to gain a 5th regular tag.
-    [character.attributesLeft.sig_weapon_tags]
-    label     = "Signature Weapon Tags (Soldier — pick 4; +1 drawback for extra tag)"
-    type      = "ListMany"
-    condition = false
-    options   = [
-      { label = "Shoot!"                },
-      { label = "Fight!"                },
-      { label = "Lethal"                },
-      { label = "Non-Lethal"            },
-      { label = "+1 Harm"               },
-      { label = "Concealable"           },
-      { label = "+1 More Harm"          },
-      { label = "Long-Range"            },
-      { label = "Silent"                },
-      { label = "Utility"               },
-      { label = "Loud (drawback)"       },
-      { label = "Messy (drawback)"      },
-      { label = "Unreliable (drawback)" },
-      { label = "Reload (drawback)"     },
-      { label = "Unstable (drawback)"   }
-    ]
-
   # ── Right column ──────────────────────────────────────────────────────────
 
   [character.attributesRight]
