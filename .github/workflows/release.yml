@@ -14,6 +14,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Foundry CLI
+        run: npm install -g @foundryvtt/foundryvtt-cli
+
+      - name: Compile packs
+        working-directory: paths-of-peril
+        run: |
+          fvtt package pack basic-moves     --in src/packs/basic-moves     --out packs
+          fvtt package pack special-moves   --in src/packs/special-moves   --out packs
+          fvtt package pack scholar-moves   --in src/packs/scholar-moves   --out packs
+          fvtt package pack daredevil-moves --in src/packs/daredevil-moves --out packs
+          fvtt package pack soldier-moves   --in src/packs/soldier-moves   --out packs
+          fvtt package pack playbooks       --in src/packs/playbooks       --out packs
+
       - name: Create module zip
         run: cd paths-of-peril && zip -r ../module.zip .
 

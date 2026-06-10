@@ -142,7 +142,7 @@ label = "Hero"
       { label = "Good intel"            },
       { label = "Recognised authority"  },
       { label = "Support teams"         }
-    ]
+  ]
 
     [character.attributesLeft.org_red_tape]
     label     = "Organization Red Tape (Scholar — pick 2)"
